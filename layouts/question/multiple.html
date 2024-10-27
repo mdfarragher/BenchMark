@@ -15,6 +15,7 @@
         {{ end }}
 
         {{ $thisQuestion := int .File.BaseFileName }}
+        {{ $nextQuestion := add 1 $thisQuestion }}
         {{ $numQuestions := int .Parent.Params.Questions }}
         {{ $percentage := div (mul 100 $thisQuestion) (add 1 $numQuestions) }}
 
@@ -23,21 +24,15 @@
         </div>
         <div class="question-section mb-4">
             <h4>{{ .Title }}</h4>
+            {{ .Content }}
             <p class="text-muted">Choose the correct answers from the options below.</p>
         </div>
         
         <div id="quiz-container">
-            <input type="checkbox" id="option1" name="quiz" class="d-none correct-answer">
-            <label for="option1" class="btn quiz-option">A. Escargots</label>
-            
-            <input type="checkbox" id="option2" name="quiz" class="d-none">
-            <label for="option2" class="btn quiz-option">B. Stamppot met snert</label>
-            
-            <input type="checkbox" id="option3" name="quiz" class="d-none correct-answer">
-            <label for="option3" class="btn quiz-option">C. Un baguette</label>
-            
-            <input type="checkbox" id="option4" name="quiz" class="d-none">
-            <label for="option4" class="btn quiz-option">D. Indian curry</label>
+            {{ range .Params.answers }}
+                <input type="checkbox" id="{{ .id }}" name="quiz" class="d-none {{ if .correct }} correct-answer {{ end }}">
+                <label for="{{ .id }}" class="btn quiz-option">{{ .title }}</label>
+            {{ end }}
         </div>
 
         <div id="noAnswer" class="alert alert-warning d-none mt-3" role="alert">
@@ -46,13 +41,22 @@
         <div id="correctAnswer" class="alert alert-success d-none mt-3" role="alert">
             Congratulations, you are correct!
         </div> 
+
+        {{ $answers := where .Params.answers "correct" true }}
         <div id="incorrectAnswer" class="alert alert-danger d-none mt-3" role="alert">
-            I'm sorry, that is not correct. The correct answers are: Escargots and Baguette.
+            I'm sorry, that is not correct. The correct answers are: <br>
+            {{ range $answers }}
+                - {{ .title }} <br>
+            {{ end }}
         </div> 
 
         <div class="d-flex justify-content-between mt-4">
             <button type="button" class="btn btn-primary" id="submitButton" onclick="app.submit()">Submit Answer</button>
-            <a type="button" class="btn btn-primary ml-auto d-none" id="nextButton" href="../results">Show Results</a>
+            {{ if gt $nextQuestion $numQuestions }}
+                <a type="button" class="btn btn-primary ml-auto d-none" id="nextButton" href="../results">Show Results</a>
+            {{ else }}
+                <a class="btn btn-primary ml-auto d-none" id="nextButton" href="../{{ $nextQuestion }}/">Next Question</a>
+            {{ end }}
         </div>
     </div>
 </body>

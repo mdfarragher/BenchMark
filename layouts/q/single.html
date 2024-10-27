@@ -6,8 +6,9 @@
     <title>Quiz Introduction</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ urls.RelURL "css/style.css" }}">
+    <script language="javascript" src="{{ urls.RelURL "js/quiz.js" }}"></script>
 </head>
-<body>
+<body onload="app.resetScore ({{ .Params.questions }} )">
 
     <div class="container">
 

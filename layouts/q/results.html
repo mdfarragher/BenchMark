@@ -6,8 +6,11 @@
     <title>Quiz Results</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ urls.RelURL "css/style.css" }}">
+    <script language="javascript" src="{{ urls.RelURL "js/quiz.js" }}"></script>
 </head>
-<body>
+
+{{ $numQuestions := .Parent.Params.questions }}
+<body onload="app.showResults({{ $numQuestions }})">
 
     <div class="container">
         <div class="results-container">
@@ -15,12 +18,12 @@
             <h1 class="display-4">{{ .Title }}</h1>
             <p class="lead">Congratulations, you've completed the quiz!</p>
             <div class="score-bar-container">
-                <div class="score-bar bg-success text-white text-center" style="width: 80%;">80%</div>
+                <div class="score-bar bg-success text-white text-center" id="scoreBar"></div>
             </div>
 
             <div class="score-details mt-4">
-                <p>Out of 10 questions, you got 8 questions correct. Your score is <strong>80%</strong>.
-                If this was an official Microsoft Certification exam, you would have <span class="text-success">passed</span>.</p>
+                <p>Out of {{ $numQuestions }} questions, you got <span id="scoreLabel"></span> questions correct. Your score is <strong><span id="percentageLabel"></span></strong>.
+                If this was an official Microsoft Certification exam, you would have <span class="" id="passedLabel"></span>.</p>
             </div>
 
             <!-- Upsell 

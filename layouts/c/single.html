@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Category</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="{{ urls.RelURL "css/style.css" }}">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
         <div class="item-grid">
             {{ range .Pages }}
                 <a href="{{ .RelPermalink }}" class="item-tile">
-                    <img src="/img/quiz.jpg" alt="Quiz image">
+                    <img src="{{ urls.RelURL "img/quiz.jpg" }}" alt="Quiz image">
                     <div>{{ .Title }}</div>
                 </a>
             {{ end }}

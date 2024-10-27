@@ -1,5 +1,5 @@
 ---
-title: "Bench-Mark"
+title: "BenchMark"
 description: "Explore the categories to test your knowledge!"
 type: "c"
 layout: "list"

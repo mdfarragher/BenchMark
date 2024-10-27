@@ -15,7 +15,7 @@
         {{ end }}
 
         {{ $thisQuestion := int .File.BaseFileName }}
-        {{ $numQuestions := .Parent.Params.Questions }}
+        {{ $numQuestions := int .Parent.Params.Questions }}
         {{ $percentage := div (mul 100 $thisQuestion) (add 1 $numQuestions) }}
 
         <div class="progress my-4">

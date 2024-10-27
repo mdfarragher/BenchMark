@@ -1,0 +1,10 @@
+---
+title: "Category 2"
+description: "This is a description of category 2"
+type: "c"
+layout: "single"
+---
+
+This would be a more specific description of the category and a space to put a bit more background information
+like what the category is about, which training this is, where to find extra information,
+and so on.

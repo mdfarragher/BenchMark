@@ -1,0 +1,111 @@
+.section-header {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+.item-tile {
+    padding: 0 0 20px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s;
+    color: inherit;
+    text-decoration: none;
+}
+.item-tile img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.item-tile:hover {
+    border-color: #999;
+    text-decoration: none;
+    color: inherit;
+}
+
+.quiz-intro {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-top: 50px;
+}
+.start-btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Initial style for quiz buttons */
+.quiz-option {
+    width: 100%;
+    margin-top: 5px;
+    background-color: lightgray;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: left !important;
+}
+
+/* Initial selection color (blue) */
+input:checked + .quiz-option {
+    background-color: blue;
+    color: white;
+}
+
+/* Correct answer style when submitted */
+.show-feedback input.correct-answer:checked + .quiz-option {
+    background-color: green;
+    color: white;
+}
+
+/* Incorrect answer style when submitted */
+.show-feedback input:not(.correct-answer):checked + .quiz-option {
+    background-color: red;
+    color: white;
+}
+
+/* Disable pointer events for the quiz option buttons after submission */
+.disabled .quiz-option {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+/* Additional styling for progress bar */
+.progress {
+    height: 20px;
+}
+
+.results-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.score-bar-container {
+    width: 100%;
+    height: 40px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.score-bar {
+    height: 100%;
+    font-weight: bold;
+    line-height: 40px;
+}

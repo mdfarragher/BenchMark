@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script language="javascript" src="/js/quiz.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        {{ with .Parent }}
+            <h1 class="display-4">{{ .Title }}</h1>
+        {{ end }}
+
+        {{ $thisQuestion := int .File.BaseFileName }}
+        {{ $numQuestions := .Parent.Params.Questions }}
+        {{ $percentage := div (mul 100 $thisQuestion) (add 1 $numQuestions) }}
+
+        <div class="progress my-4">
+            <div class="progress-bar" style="width: {{ $percentage }}%;">Question {{ $thisQuestion }} of {{ $numQuestions }}</div>
+        </div>
+        <div class="question-section mb-4">
+            <h4>{{ .Title }}</h4>
+            <p class="text-muted">Choose the correct answer from the options below.</p>
+        </div>
+        
+        <div id="quiz-container">
+            <input type="radio" id="option1" name="quiz" class="d-none correct-answer">
+            <label for="option1" class="btn quiz-option">A. Paris</label>
+            
+            <input type="radio" id="option2" name="quiz" class="d-none">
+            <label for="option2" class="btn quiz-option">B. London</label>
+            
+            <input type="radio" id="option3" name="quiz" class="d-none">
+            <label for="option3" class="btn quiz-option">C. Berlin</label>
+            
+            <input type="radio" id="option4" name="quiz" class="d-none">
+            <label for="option4" class="btn quiz-option">D. Madrid</label>
+        </div>
+
+        <div id="noAnswer" class="alert alert-warning d-none mt-3" role="alert">
+            Please select at least one answer!
+        </div> 
+        <div id="correctAnswer" class="alert alert-success d-none mt-3" role="alert">
+            Congratulations, you are correct!
+        </div> 
+        <div id="incorrectAnswer" class="alert alert-danger d-none mt-3" role="alert">
+            I'm sorry, that is not correct. The correct answer is: Paris.
+        </div> 
+
+        <div class="d-flex justify-content-between mt-4">
+            <button type="button" class="btn btn-primary" id="submitButton" onclick="app.submit()">Submit Answer</button>
+            <a class="btn btn-primary ml-auto d-none" id="nextButton" href="../2/">Next Question</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="results-container">
+
+            <h1 class="display-4">{{ .Title }}</h1>
+            <p class="lead">Congratulations, you've completed the quiz!</p>
+            <div class="score-bar-container">
+                <div class="score-bar bg-success text-white text-center" style="width: 80%;">80%</div>
+            </div>
+
+            <div class="score-details mt-4">
+                <p>Out of 10 questions, you got 8 questions correct. Your score is <strong>80%</strong>.
+                If this was an official Microsoft Certification exam, you would have <span class="text-success">passed</span>.</p>
+            </div>
+
+            <!-- Upsell 
+            <div class="mt-4">
+                <p>If you would like to practice this material some more, I have a couple of very useful trainings that you
+                    can check out which will help you get ready for the Microsoft Certification exam.</p>
+            </div>
+            <div class="item-grid">
+                <a href="#" class="item-tile">
+                    <img src="/img/category.jpg" alt="category image">
+                    <div>Training 1</div>
+                </a>
+                <a href="#" class="item-tile">
+                    <img src="/img/category.jpg" alt="category image">
+                    <div>Training 2</div>
+                </a>
+            </div>
+            -->
+
+            <a class="btn btn-primary start-btn" href="/">Back to Home Page</a>
+
+        </div>
+    </div>
+</body>
+</html>

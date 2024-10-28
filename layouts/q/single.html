@@ -12,14 +12,15 @@
 
     <div class="container">
 
-        <div class="quiz-intro">
+        <div class="section-header">
             <h1 class="display-4">{{ .Title }}</h1>
-            <p class="lead mt-4">
-                {{ .Description }}
-            </p>
+            <p class="lead mt-3">{{ .Description }}</p>
             <div class="mt-4">
                 {{ .Content }}
             </div>
+        </div>
+
+        <div class="mt-4">
             <p class="font-weight-bold">Number of questions: <span>{{ .Params.Questions }}</span></p>
             <a class="btn btn-primary start-btn" href="1/">Start Quiz</a>
         </div>

@@ -9,10 +9,13 @@
     <script language="javascript" src="{{ urls.RelURL "js/quiz.js" }}"></script>
 </head>
 <body>
-    <div class="container mt-5">
-        {{ with .Parent }}
-            <h1 class="display-4">{{ .Title }}</h1>
-        {{ end }}
+    <div class="container">
+
+        <div class="section-header">
+            {{ with .Parent }}
+                <h1 class="display-4">{{ .Title }}</h1>
+            {{ end }}
+        </div>
 
         {{ $thisQuestion := int .File.BaseFileName }}
         {{ $nextQuestion := add 1 $thisQuestion }}

@@ -13,35 +13,35 @@
 <body onload="app.showResults({{ $numQuestions }})">
 
     <div class="container">
-        <div class="results-container">
 
+        <div class="section-header">
             <h1 class="display-4">{{ .Title }}</h1>
             <p class="lead">Congratulations, you've completed the quiz!</p>
             <div class="score-bar-container">
                 <div class="score-bar bg-success text-white text-center" id="scoreBar"></div>
             </div>
-
-            <div class="score-details mt-4">
-                <p>Out of {{ $numQuestions }} questions, you got <span id="scoreLabel"></span> questions correct. Your score is <strong><span id="percentageLabel"></span></strong>.
-                If this was an official Microsoft Certification exam, you would have <span class="" id="passedLabel"></span>.</p>
-            </div>
-
-            <div class="mt-4">
-                {{ .Content }}
-            </div>
-
-            <div class="item-grid">
-                {{ range .Params.upsells }}
-                    <a href="{{ .link }}" class="item-tile">
-                        <img src="{{ urls.RelURL (add "img/" .image) }}" alt="category image">
-                        <div>{{ .title }}</div>
-                    </a>
-                {{ end }}
-            </div>
-
-            <a class="btn btn-primary start-btn" href="{{ urls.RelURL "" }}">Back to Home Page</a>
-
         </div>
+
+        <div class="score-details mt-4">
+            <p>Out of {{ $numQuestions }} questions, you got <span id="scoreLabel"></span> questions correct. Your score is <strong><span id="percentageLabel"></span></strong>.
+            If this was an official Microsoft Certification exam, you would have <span class="" id="passedLabel"></span>.</p>
+        </div>
+
+        <div class="mt-4">
+            {{ .Content }}
+        </div>
+
+        <div class="item-grid">
+            {{ range .Params.upsells }}
+                <a href="{{ .link }}" class="item-tile">
+                    <img src="{{ urls.RelURL (add "img/" .image) }}" alt="category image">
+                    <div>{{ .title }}</div>
+                </a>
+            {{ end }}
+        </div>
+
+        <a class="btn btn-primary start-btn" href="{{ urls.RelURL "" }}">Back to Home Page</a>
+
     </div>
 </body>
 </html>

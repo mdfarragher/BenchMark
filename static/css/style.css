@@ -32,16 +32,6 @@
     color: inherit;
 }
 
-.quiz-intro {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 40px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    margin-top: 50px;
-}
 .start-btn {
     width: 100%;
     margin-top: 20px;
@@ -86,17 +76,6 @@ input:checked + .quiz-option {
     height: 20px;
 }
 
-.results-container {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 40px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 .score-bar-container {
     width: 100%;
     height: 40px;

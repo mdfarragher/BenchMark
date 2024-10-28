@@ -26,22 +26,18 @@
                 If this was an official Microsoft Certification exam, you would have <span class="" id="passedLabel"></span>.</p>
             </div>
 
-            <!-- Upsell 
             <div class="mt-4">
-                <p>If you would like to practice this material some more, I have a couple of very useful trainings that you
-                    can check out which will help you get ready for the Microsoft Certification exam.</p>
+                {{ .Content }}
             </div>
+
             <div class="item-grid">
-                <a href="#" class="item-tile">
-                    <img src="/img/category.jpg" alt="category image">
-                    <div>Training 1</div>
-                </a>
-                <a href="#" class="item-tile">
-                    <img src="/img/category.jpg" alt="category image">
-                    <div>Training 2</div>
-                </a>
+                {{ range .Params.upsells }}
+                    <a href="{{ .link }}" class="item-tile">
+                        <img src="{{ urls.RelURL (add "img/" .image) }}" alt="category image">
+                        <div>{{ .title }}</div>
+                    </a>
+                {{ end }}
             </div>
-            -->
 
             <a class="btn btn-primary start-btn" href="{{ urls.RelURL "" }}">Back to Home Page</a>
 

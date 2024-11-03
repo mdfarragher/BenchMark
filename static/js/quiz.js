@@ -46,29 +46,38 @@ const app = {
     // process answer submission
     submit: function(index, size) {
 
+        // get html elements
+        const noAnswer = document.getElementById("noAnswer");
+        const correctAnswer = document.getElementById("correctAnswer");
+        const incorrectAnswer = document.getElementById("incorrectAnswer");
+        const moreInfo = document.getElementById("moreInfo");
+        const quizContainer = document.getElementById("quiz-container");
+
         // warn user if no answers are selected
         const selectedOption = document.querySelector('#quiz-container input:checked');
         if (!selectedOption) {
-            document.getElementById("noAnswer").classList.remove("d-none");
+            noAnswer.classList.remove("d-none");
             return;
         } else
-            document.getElementById("noAnswer").classList.add("d-none");
+            noAnswer.classList.add("d-none");
 
         // show user if the answer is correct
         const result = this.check();
         if (result)
-            document.getElementById("correctAnswer").classList.remove("d-none");
-        else
-            document.getElementById("incorrectAnswer").classList.remove("d-none");
+            correctAnswer.classList.remove("d-none");
+        else {
+            incorrectAnswer.classList.remove("d-none");
+            moreInfo ? moreInfo.classList.remove("d-none") : false;
+        }
 
         // update score
         this.updateScore(index, size, result);
 
         // disable all buttons in the quiz container
-        document.getElementById("quiz-container").classList.add("disabled");
+        quizContainer.classList.add("disabled");
 
         // enable the red/green feedback colors
-        document.getElementById("quiz-container").classList.add("show-feedback");
+        quizContainer.classList.add("show-feedback");
 
         // hide the submit button
         document.getElementById('submitButton').classList.add("d-none");

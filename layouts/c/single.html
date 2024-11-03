@@ -1,32 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Category</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ urls.RelURL "css/style.css" }}">
-</head>
-<body>
+{{ define "main" }}
 
-    <div class="container">
-
-        <div class="section-header">
-            <h1 class="display-4">{{ .Title }}</h1>
-            <p class="lead mt-3">{{ .Description }}</p>
-            <div class="mt-4">
-                {{ .Content }}
-            </div>
-        </div>
-
-        <div class="item-grid">
-            {{ range .Pages }}
-                <a href="{{ .RelPermalink }}" class="item-tile">
-                    <img src="{{ urls.RelURL (add "img/" .Params.image) }}" alt="Quiz image">
-                    <div>{{ .Title }}</div>
-                </a>
-            {{ end }}
+    <div class="section-header">
+        <h1 class="display-4">{{ .Title }}</h1>
+        <p class="lead mt-3">{{ .Description }}</p>
+        <div class="mt-4">
+            {{ .Content }}
         </div>
     </div>
-</body>
-</html>
+
+    <div class="item-grid">
+        {{ range .Pages }}
+            <a href="{{ .RelPermalink }}" class="item-tile">
+                <img src="{{ urls.RelURL (add "img/" .Params.image) }}" alt="Quiz image">
+                <div>{{ .Title }}</div>
+            </a>
+        {{ end }}
+    </div>
+
+{{ end }}

@@ -5,6 +5,11 @@ type: "q"
 layout: "single"
 image: az900.jpg
 questions: 10
+passing: 80
+
+more: "Master Azure management and governance with my Azure Fundamentals training course."
+learn: "View Azure Fundamentals Training"
+link: "https://www.mdft.academy/azure-cloud-fundamentals"
 ---
 
 This quiz will test your knowledge of Azure management and governance. You will be tested on your knowledge of cost management, Microsoft Purview, policies, resource locks, and Azure management and monitoring tools.

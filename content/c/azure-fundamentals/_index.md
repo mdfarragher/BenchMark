@@ -1,6 +1,6 @@
 ---
-title: "Azure Cloud Fundamentals"
-description: "Azure cloud deployment and infrastructure management"
+title: "Azure Fundamentals"
+description: "Azure concepts, services and management"
 type: "c"
 layout: "single"
 image: az900.jpg

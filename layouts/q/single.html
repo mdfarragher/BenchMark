@@ -1,16 +1,35 @@
+{{ define "nav" }}
+    <a class="breadcrumb-item text-light" href="../..">{{ .Parent.Title }}</a>
+    <a class="breadcrumb-item text-light" href="#">{{ .Title }}</a>
+{{ end }}
+
 {{ define "main" }}
 
     <div class="section-header">
         <h1 class="display-4">{{ .Title }}</h1>
         <p class="lead mt-3">{{ .Description }}</p>
-        <div class="mt-4">
-            {{ .Content }}
-        </div>
+    </div>
+
+    {{ if .Params.more }}
+    <div id="moreInfo" class="alert alert-info mt-3" role="alert">
+        <p><i class="bi-info-square-fill mr-1"></i> {{ .Params.more }}</p>
+        <a class="btn btn-success ml-auto" target="_blank" href="{{ .Params.link }}">{{ .Params.learn }} <i class="bi-mortarboard ml-1"></i></a>
+    </div>
+    {{ end }}
+
+    <div class="mt-4">
+        {{ .Content }}
     </div>
 
     <div class="mt-4">
-        <p class="font-weight-bold">Number of questions: <span>{{ .Params.Questions }}</span></p>
-        <a class="btn btn-primary start-btn" href="1/">Start Quiz</a>
+        <p class="font-weight-bold">
+            Number of questions: <span>{{ .Params.Questions }}</span><br>
+            Required grade to pass: <span>{{ .Params.Passing }}%</span>
+        </p>
+    </div>
+
+    <div class="d-flex justify-content-between mt-4">
+        <a class="btn btn-primary" href="1/">Start The Quiz <i class="bi-caret-right"></i></a>
     </div>
 
 {{ end }}

@@ -5,17 +5,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ .Site.Title }}</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="{{ urls.RelURL "css/style.css" }}">
-        <script language="javascript" src="{{ urls.RelURL "js/quiz.js" }}"></script>
+        <script src="{{ urls.RelURL "js/quiz.js" }}"></script>
     </head>
     <body {{ block "onload" . }}{{ end }}>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="{{ urls.RelURL "img/mdft.png" }}" class="mr-2" width="32" height="32">
+                    <span>BenchMark</span>
+                </a>
+                <div class="breadcrumb bg-dark text-light my-0">
+                    <a class="breadcrumb-item text-light" href="/"><i class="bi-house"></i></a>
+                    {{ block "nav" . }}
+                    {{ end }}
+                </div>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://www.mdft.academy/training">Back to Training <i class="bi-arrow-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <div class="container pb-4">
             {{ block "main" . }}
             {{ end }}
         </div>
 
         <!-- Matomo Tag Manager -->
-        <script type="text/javascript">
+        <script>
         var _mtm = window._mtm = window._mtm || [];
         _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
         (function() {

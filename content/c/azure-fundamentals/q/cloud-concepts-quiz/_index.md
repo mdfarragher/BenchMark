@@ -1,10 +1,15 @@
 ---
-title: "Azure Cloud Concepts"
+title: "Azure Concepts"
 description: "Test your knowledge on the Azure cloud fundamentals"
 type: "q"
 layout: "single"
 image: az900.jpg
 questions: 10
+passing: 80
+
+more: "Master Azure cloud concepts with my Azure Fundamentals training course."
+learn: "View Azure Fundamentals Training"
+link: "https://www.mdft.academy/azure-cloud-fundamentals"
 ---
 
 This quiz will test your knowledge of Azure cloud concepts. You will be tested on your knowledge of cloud computing, the benefits of cloud services, and the three cloud service types: IaaS, PaaS and Saas.

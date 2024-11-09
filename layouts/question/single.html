@@ -1,7 +1,7 @@
 {{ define "nav" }}
-    <a class="breadcrumb-item text-light" href="../../..">{{ .Parent.Parent.Title }}</a>
-    <a class="breadcrumb-item text-light" href="..">{{ .Parent.Title }}</a>
-    <a class="breadcrumb-item text-light" href="#">Question {{ .File.BaseFileName }}</a>
+    <a class="breadcrumb-item" href="../../..">{{ .Parent.Parent.Title }}</a>
+    <a class="breadcrumb-item" href="..">{{ .Parent.Title }}</a>
+    <a class="breadcrumb-item" href="#">Q{{ .File.BaseFileName }}</a>
 {{ end }}
 
 {{ define "main" }}

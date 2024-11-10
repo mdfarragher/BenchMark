@@ -87,11 +87,12 @@ const app = {
     },
 
     // show quiz results
-    showResults: function(size) {
+    showResults: function(size, passing) {
 
         // get final score
         const score = this.getResult(size);
         const percentage = 100 * score / size;
+        const passed = (percentage >= (passing || 0));
 
         // update labels
         document.getElementById("scoreLabel").innerText = score;
@@ -102,8 +103,11 @@ const app = {
         document.getElementById("scoreBar").innerText = percentage + "%";
 
         // update passed label
-        const passed = percentage >= 80; 
-        document.getElementById("passedLabel").innerText = passed ? "passed" : "failed";
-        document.getElementById("passedLabel").classList.add(passed ? "text-success" : "text-danger");
+        const label = document.getElementById("passedLabel");
+        if (label)
+        {
+            label.innerText = passed ? "passed" : "failed";
+            label.classList.add(passed ? "text-success" : "text-danger");
+        }
     }
 };

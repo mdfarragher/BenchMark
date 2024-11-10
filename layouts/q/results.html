@@ -1,5 +1,5 @@
 {{ define "onload" }}
-    onload="app.showResults({{ .Parent.Params.questions }})"
+    onload="app.showResults({{ .Parent.Params.questions }}, {{ .Parent.Params.passing }})"
 {{ end }}
 
 {{ define "nav" }}
@@ -20,7 +20,9 @@
 
     <div class="score-details mt-4">
         <p>Out of {{ .Parent.Params.questions }} questions, you got <span id="scoreLabel"></span> questions correct. Your score is <strong><span id="percentageLabel"></span></strong>.
+        {{ if .Parent.Params.passing }}
         If this was an official Microsoft Certification exam, you would have <span class="" id="passedLabel"></span>.</p>
+        {{ end }}
     </div>
 
     <div class="mt-4">

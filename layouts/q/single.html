@@ -24,7 +24,9 @@
     <div class="mt-4">
         <p class="font-weight-bold">
             Number of questions: <span>{{ .Params.Questions }}</span><br>
+            {{ if .Params.Passing }}
             Required grade to pass: <span>{{ .Params.Passing }}%</span>
+            {{ end }}
         </p>
     </div>
 

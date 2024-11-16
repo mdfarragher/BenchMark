@@ -7,8 +7,8 @@ image: az900.jpg
 questions: 10
 passing: 80
 
-more: "Master Azure management and governance with my Azure Fundamentals training course."
-learn: "View Azure Fundamentals Training"
+more: "Did you know I have a training course on Azure management and governance?"
+learn: "View Azure Training"
 link: "https://www.mdft.academy/azure-cloud-fundamentals"
 ---
 

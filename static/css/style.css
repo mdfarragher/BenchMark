@@ -58,13 +58,18 @@ input:checked + .quiz-option {
     color: white;
 }
 
-/* Correct answer style when submitted */
+/* correct selected answer */
 .show-feedback input.correct-answer:checked + .quiz-option {
     background-color: green;
     color: white;
 }
 
-/* Incorrect answer style when submitted */
+/* correct missed answer */
+.show-feedback input.correct-answer:not(:checked) + .quiz-option {
+    background-color: lightyellow;
+}
+
+/* incorrect selected answer */
 .show-feedback input:not(.correct-answer):checked + .quiz-option {
     background-color: red;
     color: white;

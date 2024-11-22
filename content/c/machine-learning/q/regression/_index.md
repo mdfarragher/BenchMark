@@ -1,5 +1,5 @@
 ---
-title: "Regression"
+title: "2. Regression"
 description: "Test your knowledge on regression in machine learning"
 type: "q"
 layout: "single"

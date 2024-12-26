@@ -1,5 +1,5 @@
 ---
-title: "3. Binary Classification"
+title: "4. Binary Classification"
 description: "Test your knowledge on binary classification in machine learning"
 type: "q"
 layout: "single"

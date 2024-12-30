@@ -3,7 +3,7 @@ title: "Your Results"
 type: "q"
 layout: "results"
 
-more: "Would you like to learn more about machine learning? Then please check out my online training courses. I can teach you how to build machine learning apps in C# or F#, with ML.NET or the Cognitive Toolkit, and in the cloud by using the Azure Machine Learning service."
-learn: "View Training Courses"
-link: "https://www.mdft.academy/training"
+more: "If you accessed this quiz from the Supervised Machine Learning training course, then please click the button to go back to the online course environment and continue with the next lesson."
+learn: "Go Back To The Course"
+link: "https://www.mdft.academy/view/courses/81334804-edad-498c-8daf-6000fae8926f/2907085-regression/9424981-up-next"
 ---

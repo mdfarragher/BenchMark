@@ -1,5 +1,5 @@
 ---
-title: "4. Multiclass Classification"
+title: "5. Multiclass Classification"
 description: "Test your knowledge on multiclass classification in machine learning"
 type: "q"
 layout: "single"

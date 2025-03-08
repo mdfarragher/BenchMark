@@ -3,7 +3,7 @@ title: "2. Data Preparation"
 description: "Test your knowledge on data preparation for machine learning"
 type: "q"
 layout: "single"
-image: ml-data.jpg
+image: ml-learn.jpg
 questions: 10
 ---
 

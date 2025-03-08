@@ -3,7 +3,7 @@ title: "1. Introducing AI"
 description: "Test your knowledge on artificial intelligence"
 type: "q"
 layout: "single"
-image: ml-data.jpg
+image: ml-learn.jpg
 questions: 10
 ---
 

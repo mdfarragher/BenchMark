@@ -5,7 +5,7 @@ type: "c"
 layout: "single"
 image: ms900.jpg
 ---
-The Microsoft 365 Fundamentals (MS-900) certification will help you implement solutions for efficient deployment and management of endpoints on various operating systems, platforms, and device types. You will use Microsoft Intune, Microsoft Intune Suite, Windows Autopilot, Microsoft Copilot for Security, Microsoft Defender for Endpoint, Microsoft Entra ID, Azure Virtual Desktop, and Windows 365 to implement identity, security, access, policies, updates, and apps for endpoints.
+The Microsoft 365 Endpoint Administrator (MD-102) certification will help you implement solutions for efficient deployment and management of endpoints on various operating systems, platforms, and device types. You will learn how to use Microsoft Intune, Microsoft Intune Suite, Windows Autopilot, Microsoft Defender for Endpoint, Microsoft Entra ID, Azure Virtual Desktop, and Windows 365 to implement configuration-, security- and app protection policies, and deploy and update operating systems and apps on endpoints.
 
 The MD-102 certification exam measures the following skills:
 

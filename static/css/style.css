@@ -50,22 +50,45 @@
     color: black;
     transition: background-color 0.3s, color 0.3s;
     text-align: left !important;
-    padding-left: 38px; /* Add padding to make room for the icon */
+    padding-left: 44px; /* Add padding to make room for the icon */
     position: relative; /* Position relative for the icon */
 }
 
 .quiz-option::before {
-    content: "\F584"; /* square */
     font-family: "bootstrap-icons";
     position: absolute;
-    left: 10px;
+    left: 20px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 16px;
 }
 
-input:checked + .quiz-option::before {
+/* icons for multiselect quiz options in each state */
+input[type=checkbox]:not(:checked) + .quiz-option::before {
+    content: "\F584"; /* square */
+}
+.show-feedback input[type=checkbox].correct-answer:not(:checked) + .quiz-option:before {
+    content: "\F137"; /* arrow right square */
+}
+.show-feedback input[type=checkbox]:not(.correct-answer):checked + .quiz-option:before {
+    content: "\F629"; /* cross square */
+}
+input[type=checkbox]:checked + .quiz-option::before {
     content: "\F26D"; /* check square */
+}
+
+/* icons for single-select quiz options in each state */
+input[type=radio]:not(:checked) + .quiz-option::before {
+    content: "\F28A"; /* circle */
+}
+.show-feedback input[type=radio].correct-answer:not(:checked) + .quiz-option:before {
+    content: "\F134"; /* arrow right circle */
+}
+.show-feedback input[type=radio]:not(.correct-answer):checked + .quiz-option:before {
+    content: "\F623"; /* cross circle */
+}
+input[type=radio]:checked + .quiz-option::before {
+    content: "\F270"; /* check circle */
 }
 
 /* Initial selection color (blue) */
@@ -79,26 +102,17 @@ input:checked + .quiz-option {
     background-color: green;
     color: white;
 }
-.show-feedback input.correct-answer:checked + .quiz-option:before {
-    content: "\F26D"; /* check square */
-}
 
 /* correct missed answer */
 .show-feedback input.correct-answer:not(:checked) + .quiz-option {
     background-color: blue;
     color: white;
 }
-.show-feedback input.correct-answer:not(:checked) + .quiz-option:before {
-    content: "\F137"; /* arrow right square */
-}
 
 /* incorrect selected answer */
 .show-feedback input:not(.correct-answer):checked + .quiz-option {
     background-color: red;
     color: white;
-}
-.show-feedback input:not(.correct-answer):checked + .quiz-option:before {
-    content: "\F629"; /* cross square */
 }
 
 /* Disable pointer events for the quiz option buttons after submission */

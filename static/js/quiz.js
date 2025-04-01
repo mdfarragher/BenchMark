@@ -50,6 +50,7 @@ const app = {
         const noAnswer = document.getElementById("noAnswer");
         const correctAnswer = document.getElementById("correctAnswer");
         const incorrectAnswer = document.getElementById("incorrectAnswer");
+        const explanation = document.getElementById("explanation");
         const moreInfo = document.getElementById("moreInfo");
         const quizContainer = document.getElementById("quiz-container");
 
@@ -63,10 +64,11 @@ const app = {
 
         // show user if the answer is correct
         const result = this.check();
-        if (result)
+        if (result) {
             correctAnswer.classList.remove("d-none");
-        else {
+        } else {
             incorrectAnswer.classList.remove("d-none");
+            explanation.classList.remove("d-none");
             moreInfo ? moreInfo.classList.remove("d-none") : false;
         }
 
@@ -84,6 +86,15 @@ const app = {
 
         // reveal the next button
         document.getElementById("nextButton").classList.remove("d-none");
+    },
+
+    // show explanation
+    explain: function() {
+        const explanation = document.getElementById("explanation");
+        const moreInfo = document.getElementById("moreInfo");
+
+        explanation.classList.remove("d-none");
+        moreInfo ? moreInfo.classList.remove("d-none") : false;
     },
 
     // show quiz results

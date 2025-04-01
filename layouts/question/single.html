@@ -41,8 +41,8 @@
     <div id="correctAnswer" class="alert alert-success d-none mt-3" role="alert">
         <div class="d-flex align-items-center justify-content-between">
             <div><i class="bi-check-circle-fill mr-1"></i>
-            Congratulations, you are correct!</div>
-            <button type="button" class="btn btn-success" id="explainButton" onclick="app.explain()"><i class="bi-info-lg"></i></button>
+            Correct!</div>
+            <button type="button" class="btn btn-success" id="explainButton" onclick="app.explain()">Explain <i class="bi-info-square ml-1"></i></button>
         </div>
     </div>
 
@@ -62,7 +62,7 @@
         <div class="d-flex align-items-center justify-content-between">
             <div><i class="bi-mortarboard mr-1"></i> {{ .Params.more }}</div>
             {{ if .Params.link }}
-            <a class="btn btn-secondary ml-auto" target="_blank" href="{{ .Params.link }}">{{ .Params.learn }} <i class="bi-box-arrow-right ml-1"></i></a>
+            <a class="btn btn-success ml-auto" target="_blank" href="{{ .Params.link }}">{{ .Params.learn }} <i class="bi-box-arrow-right ml-1"></i></a>
             {{ end }}
         </div>
     </div>

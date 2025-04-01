@@ -88,7 +88,7 @@ input[type=radio]:not(:checked) + .quiz-option::before {
     content: "\F623"; /* cross circle */
 }
 input[type=radio]:checked + .quiz-option::before {
-    content: "\F270"; /* check circle */
+    content: "\F26B"; /* check circle */
 }
 
 /* Initial selection color (blue) */

@@ -102,7 +102,7 @@ const app = {
 
         // get final score
         const score = this.getResult(size);
-        const percentage = 100 * score / size;
+        const percentage = Math.round(100 * score / size);
         const passed = (percentage >= (passing || 0));
 
         // update labels

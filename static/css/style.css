@@ -10,7 +10,10 @@
 
 .item-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, calc(100% / 4 - 15px)), 1fr));
+    /* For 4 thumbnails per line: */
+    /* grid-template-columns: repeat(auto-fill, minmax(min(100%, calc(100% / 4 - 15px)), 1fr)); */
+    /* For 3 thumbnails per line: */
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, calc(100% / 3 - 15px)), 1fr));
     gap: 20px;
     margin-top: 30px;
 }

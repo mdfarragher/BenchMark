@@ -1,5 +1,5 @@
 ---
-title: "Azure Data Fundamentals"
+title: "DP-900 Azure Data Fundamentals"
 description: "Demonstrate your knowledge of core data concepts and related Microsoft Azure data services"
 type: "c"
 layout: "single"

@@ -1,5 +1,5 @@
 ---
-title: "Azure Fundamentals"
+title: "AZ-900 Azure Fundamentals"
 description: "Foundational knowledge of Azure concepts, services and management"
 type: "c"
 layout: "single"

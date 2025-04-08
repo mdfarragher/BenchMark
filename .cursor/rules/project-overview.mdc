@@ -13,6 +13,8 @@ When a student uses BenchMark and gets a question wrong, the app immediately sho
 
 Benchmark uses the Hugo static site generator to generate web pages from markdown content and template files. The markdown files represent quiz descriptions, quiz questions and other web page content used in the app. The Hugo template files are used to process the markdown content and render it into HTML files.
 
+This development system runs on Windows 11, and the terminal uses Powershell Core version 7. Please use Powershell scripts if you need to run a tool in the terminal. 
+
 # Folder structure
 
 This project uses a default Hugo project layout with the following content folder structure:
@@ -26,7 +28,7 @@ This project uses a default Hugo project layout with the following content folde
       │                   └── _index.md  # description of the practice quiz
       │                   └── 1.md       # question 1 of the practice quiz
       │                   └── 2.md       # question 2 of the practice quiz
-      │                   └── 3.md       # question 3 of the practice quiz
+      │                   └── <num>.md   # question <num> of the practice quiz
       │                   └── results.md # results page content of the practice quiz
       ├── layouts/
       │   ├── _default_/

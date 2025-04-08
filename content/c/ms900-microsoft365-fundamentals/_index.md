@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Fundamentals"
+title: "MS-900 Microsoft 365 Fundamentals"
 description: "Recommend Microsoft 365 solutions that address common organizational IT challenges"
 type: "c"
 layout: "single"

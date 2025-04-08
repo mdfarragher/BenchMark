@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning"
+title: "XX-100 Machine Learning"
 description: "Data preparation, supervised and unsupervised machine learning, and advanced machine learning concepts"
 type: "c"
 layout: "single"

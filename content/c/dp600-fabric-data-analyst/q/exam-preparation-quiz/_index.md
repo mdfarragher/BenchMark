@@ -3,7 +3,7 @@ title: "Exam Preparation Quiz"
 description: "Test your knowledge of Fabric Data Analysis"
 type: "q"
 layout: "single"
-image: dp900.jpg
+image: dp600.jpg
 questions: 75
 passing: 70
 ---

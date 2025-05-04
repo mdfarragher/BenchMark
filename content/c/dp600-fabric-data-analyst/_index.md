@@ -3,7 +3,7 @@ title: "DP-600 Fabric Data Analyst"
 description: "Implementing analytics solutions using Microsoft Fabric"
 type: "c"
 layout: "single"
-image: dp900.jpg
+image: dp600.jpg
 ---
 The Fabric Data Analyst (DP-600) certification asserts that you have subject matter expertise in designing, creating, and managing analytical assets, such as semantic models, data warehouses, or lakehouses.
 

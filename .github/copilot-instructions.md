@@ -41,15 +41,12 @@ The data in a question file may be in text format, with no markdown and frontmat
 - Keep the "learn" property short because it will be rendered on a HTML button.
 - Make sure the "title" and "learn" properties have the first letter of each word capitalized.
 
-If the text below the frontmatter is longer than one single line of text, then I want you to change the question so that it refers to my company. You can do this by making the following changes: 
+Change the question so that it refers to my company. You can do this by making the following changes: 
 
 - State that the resources mentioned in the question are operated by "MDFT Academy", a well known training agency.
 - State that the student is working for MDFT Academy or has been hired by MDFT Academy.
 - Rename any user names in the scenario to "MARK" and "CLAIRE", and make up any other names.
 - Rename any group names in the scenario to TRAINERS, STUDENTS, and make up any other names.
 - Rename any resource names to typical training agency resources like "Students", "Trainers", "Customers" etc. 
+- Rename any app names to applications that are typically used in an educational context.
 
-If the text below the frontmatter is just one single sentence, then I want you to simplify the question as follows:
-
-- Move the question text to the frontmatter and place it in the "title" property.
-- Remove all markdown content below the frontmatter block. 

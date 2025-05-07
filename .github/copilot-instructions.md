@@ -34,8 +34,8 @@ The data in a question file may be in text format, with no markdown and frontmat
 - Set up a frontmatter block and fill in the "title", "type" and "layout" properties. 
 - Make sure the "layout" property is correct, by checking if there is only one correct answer or if there are more than one correct answers.  
 - Move the list of answer to the frontmatter, using the correct format as described above.
-- Come up with explanations for all incorrect answers. Do not start explanations with "This is incorrect", because the Hugo templates already add this text. Describe what the feature in the answer does, and why it is not applicable to the question.
-- Find a Microsoft Learn page that explains the correct answer, and add the page details to the "more", "learn" and "link" properties of the frontmatter. 
+- Come up with explanations for all answers. Do not start explanations with "This is incorrect" or "This is correct", because the Hugo templates already add this text. Describe what the feature in the answer does, and why it is applicable or not applicable to the question.
+- Find a web page (preferrably Microsoft Learn) that explains the correct answer, and add the page details to the "more", "learn" and "link" properties of the frontmatter. 
 - Make sure the url in the "link" property refers to an existing web page.
 - Keep the "more" property short, preferrably just "Learn more about...". 
 - Keep the "learn" property short because it will be rendered on a HTML button.
@@ -45,7 +45,7 @@ Change the question so that it refers to my company. You can do this by making t
 
 - State that the resources mentioned in the question are operated by "MDFT Academy", a well known training agency.
 - State that the student is working for MDFT Academy or has been hired by MDFT Academy.
-- Rename any user names in the scenario to "MARK" and "CLAIRE", and make up any other names.
+- Rename any user names in the scenario to "Mark" and "Claire", and make up any other names.
 - Rename any group names in the scenario to TRAINERS, STUDENTS, and make up any other names.
 - Rename any resource names to typical training agency resources like "Students", "Trainers", "Customers" etc. 
 - Rename any app names to applications that are typically used in an educational context.

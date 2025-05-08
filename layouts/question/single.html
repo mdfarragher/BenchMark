@@ -53,7 +53,7 @@
     <div id="explanation" class="alert bg-white border d-none mt-3" role="warning">
         <p><i class="bi-info-square mr-1"></i> Explanations for each answer:</p>
         <ul>{{ range .Params.answers }}
-            <li><strong>{{ .title }}</strong> is {{ if .correct }}<strong class="text-success">correct</strong>{{ else }}<strong class="text-danger">incorrect</strong>. {{ .explain }}{{ end }}</li>
+            <li><strong>{{ .title }}</strong> is {{ if .correct }}<strong class="text-success">correct</strong>{{ else }}<strong class="text-danger">incorrect</strong>{{ end }}. {{ .explain }}</li>
         {{ end }}</ul>
     </div> 
 

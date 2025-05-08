@@ -17,4 +17,3 @@ The AZ-400 certification exam measures the following skills:
 - Develop a security and compliance plan (10–15%)
 - Implement an instrumentation strategy (5–10%)
 
-Read more about the exam here: [AZ-400 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400)

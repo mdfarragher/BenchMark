@@ -17,4 +17,3 @@ The DP-600 certification exam measures the following skills:
 - Prepare data (45–50%)
 - Implement and manage semantic models (25–30%)
 
-Read more about the exam here: [DP-600 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600)

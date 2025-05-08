@@ -14,4 +14,3 @@ The MD-102 certification exam measures the following skills:
 - Manage applications (15–20%)
 - Protect devices (15–20%)
 
-Read more about the exam here: [MD-102 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102)

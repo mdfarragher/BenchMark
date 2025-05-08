@@ -14,4 +14,3 @@ The AZ-900 certification exam measures the following skills:
 - Describe Azure architecture and services (35–40%)
 - Describe Azure management and governance (30–35%)
 
-Read more about the exam here: [AZ-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900)

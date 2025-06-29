@@ -5,15 +5,8 @@ type: "c"
 layout: "single"
 image: dp600.jpg
 ---
-The Fabric Data Analyst (DP-600) certification asserts that you have subject matter expertise in designing, creating, and managing analytical assets, such as semantic models, data warehouses, or lakehouses.
+The Microsoft DP-600 certification validates your expertise in designing, building, and managing analytics solutions using Microsoft Fabric. This certification is intended for professionals who work with data analytics, including the creation and management of analytical assets such as semantic models, data warehouses, and lakehouses within the Microsoft Fabric ecosystem.
 
-Tech professionals with a DP-600 certification can prepare and enrich data for analysis, secure and maintain analytics assets and implement and manage semantic models.
+Earning the DP-600 certification demonstrates your ability to prepare and enrich data for analysis, secure and maintain analytics assets, and implement and manage semantic models. Certified professionals are also expected to be proficient in querying and analyzing data using Structured Query Language (SQL), Kusto Query Language (KQL), and Data Analysis Expressions (DAX).
 
-They should also be able to query and analyze data by using Structured Query Language (SQL), Kusto Query Language (KQL), and Data Analysis Expressions (DAX).
-
-The DP-600 certification exam measures the following skills:
-
-- Maintain a data analytics solution (25–30%)
-- Prepare data (45–50%)
-- Implement and manage semantic models (25–30%)
 

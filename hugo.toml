@@ -1,5 +1,18 @@
 baseURL = "https://quiz.mdft.academy/"
 languageCode = "en-us"
-title = "MDFT Academy Quizzes"
+title = "BenchMark Quizzes by MDFT Pro"
 
+[markup]
+
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+    [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
+      [markup.goldmark.parser.attribute]
+        block = true
+  
+  [markup.highlight]
+    style = "catppuccin-latte"
 

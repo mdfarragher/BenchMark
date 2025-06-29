@@ -5,12 +5,8 @@ type: "c"
 layout: "single"
 image: ms900.jpg
 ---
-The Microsoft 365 Endpoint Administrator (MD-102) certification will help you implement solutions for efficient deployment and management of endpoints on various operating systems, platforms, and device types. You will learn how to use Microsoft Intune, Microsoft Intune Suite, Windows Autopilot, Microsoft Defender for Endpoint, Microsoft Entra ID, Azure Virtual Desktop, and Windows 365 to implement configuration-, security- and app protection policies, and deploy and update operating systems and apps on endpoints.
 
-The MD-102 certification exam measures the following skills:
+The MD-102 certification validates the skills required to deploy, configure, secure, manage, and monitor devices and client applications in a Microsoft 365 environment. This certification is intended for IT professionals who manage endpoints and support users in organizations using Microsoft 365 services. 
 
-- Prepare infrastructure (25–30%)
-- Manage devices (30–35%)
-- Manage applications (15–20%)
-- Protect devices (15–20%)
+Candidates are expected to have experience with Microsoft 365 workloads, Windows client, and non-Windows devices, as well as a strong understanding of deployment, security, and compliance best practices.
 

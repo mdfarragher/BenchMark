@@ -5,12 +5,7 @@ type: "c"
 layout: "single"
 image: az900.jpg
 ---
-The Azure Fundamentals (AZ-900) certification will help you gain foundational knowledge of cloud concepts in general and Microsoft Azure in particular. The exam is a common starting point in a journey towards a career in Azure.
+The Azure Fundamentals (AZ-900) certification is designed for individuals who are new to cloud computing and Microsoft Azure. It provides essential knowledge of core Azure concepts, services, and management tools. This certification is an excellent starting point for students and professionals who want to build a career in cloud technologies.
 
-Tech professionals with an AZ-900 certification can describe Azure architectural components and Azure services, such as compute, networking and storage, and can describe features and tools to secure, govern, and administer Azure.
-
-The AZ-900 certification exam measures the following skills:
-- Describe cloud concepts (25–30%)
-- Describe Azure architecture and services (35–40%)
-- Describe Azure management and governance (30–35%)
+With an AZ-900 certification, you will be able to describe Azure architectural components, core services such as compute, networking, and storage, and understand features and tools for securing, governing, and administering Azure environments. The exam is suitable for anyone looking to validate their foundational understanding of Azure, regardless of technical background.
 

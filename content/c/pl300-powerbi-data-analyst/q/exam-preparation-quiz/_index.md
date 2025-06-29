@@ -7,7 +7,7 @@ image: pl300.jpg
 questions: 75
 passing: 70
 ---
-Heads up! I created this quiz with the help of an AI Agent, and I have not checked every answer yet. Be aware that there might be small mistakes in the questions, answers or explanations.
+Heads up! I created this quiz with the help of an AI agent, and I have personally verified questions 1 to 5. There might be small mistakes in the remainder of the quiz due to AI hallucinations. 
 { .alert .alert-warning }
 
 This quiz will help you prepare for the Power BI Data Analyst (PL-300) certification. The quiz questions are curated from various public sources and are very similar to what you can expect on the actual certification exam.

@@ -55,18 +55,16 @@
         <ul>{{ range .Params.answers }}
             <li><strong>{{ .title }}</strong> is {{ if .correct }}<strong class="text-success">correct</strong>{{ else }}<strong class="text-danger">incorrect</strong>{{ end }}. {{ .explain }}</li>
         {{ end }}</ul>
-    </div> 
 
-    {{ if .Params.more }}
-    <div id="moreInfo" class="alert alert-info d-none mt-3" role="info">
-        <div class="d-flex align-items-center justify-content-between">
-            <div><i class="bi-mortarboard mr-1"></i> {{ .Params.more }}</div>
+        {{ if .Params.more }}
+        <div class="d-flex">
+            <div><i class="bi-mortarboard mr-1"></i> {{ .Params.more }}: </div>
             {{ if .Params.link }}
-            <a class="btn btn-success ml-auto" target="_blank" href="{{ .Params.link }}">{{ .Params.learn }} <i class="bi-box-arrow-right ml-1"></i></a>
+            <a class="btn btn-light border border-dark mr-2 ml-auto" target="_blank" href="{{ .Params.link }}">{{ .Params.learn }} <i class="bi-box-arrow-right ml-1"></i></a>
             {{ end }}
         </div>
-    </div>
-    {{ end }}
+        {{ end }}
+    </div> 
 
     <div class="d-flex justify-content-between mt-4">
         <button type="button" class="btn btn-primary" id="submitButton" onclick="app.submit({{$thisQuestion}},{{$numQuestions}})">Submit Answer <i class="bi-save ml-1"></i></button>

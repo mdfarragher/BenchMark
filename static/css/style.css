@@ -156,7 +156,12 @@ input:checked + .quiz-option {
 
 /* Additional styling for progress bar */
 .progress {
-    height: 20px;
+    height: 20px; 
+}
+
+.progress .progress-bar {
+    background-color: #AFEB2B;
+    color: black;
 }
 
 .score-bar-container {

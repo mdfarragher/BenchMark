@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(Get-ChildItem \"C:\\Users\\mdfar\\Source\\BenchMark\\content\\c\\dp900''data''fundamentals\\q\"\")"
+      "Bash(cat:*)",
+      "Bash(sed:*)",
+      "Bash(for i in {17..30})",
+      "Bash(do echo \"=== Question $i ===\")",
+      "Bash(done)",
+      "Bash(for i in {16..30})",
+      "Bash(do echo \"=== Question $i - Last line check ===\")",
+      "Bash(tail:*)"
     ],
     "deny": [],
     "ask": []

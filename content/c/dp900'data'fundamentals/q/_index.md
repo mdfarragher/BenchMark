@@ -3,7 +3,7 @@ title: "Exam Preparation Quiz"
 description: "Test your knowledge of Azure Data Fundamentals"
 type: "q"
 layout: "single"
-image: az400.jpg
+image: dp900.jpg
 questions: 75
 passing: 70
 ---

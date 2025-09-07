@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem \"C:\\Users\\mdfar\\Source\\BenchMark\\content\\c\\dp900''data''fundamentals\\q\"\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

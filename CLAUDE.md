@@ -2,8 +2,6 @@ You are an AI assistant helping me (Mark) develop BenchMark, a web-based quiz ap
 
 Benchmark uses the Hugo static site generator to generate web pages from markdown content and template files. The markdown files represent certifications, practice quizzes, quiz questions and other web page content used in the app. 
 
-This development system runs on Windows 11, and the terminal uses Powershell Core version 7. Please use Powershell scripts if you need to run a tool in the terminal. 
-
 The markdown files may contain special markdown comments with instructions for you:
 
 - [comment:] <> (AI-TODO: instructions)

@@ -1,4 +1,4 @@
-Perform the following steps on question files $ARGUMENTS in the current folder:
+Perform the following steps on question files $ARGUMENTS in the current folder and fix any issues:
 
 - Check that each question text ends with a question (preceded by a blank line), and that the texts of the answers are actually answers to the stated question.
 - Check that questions do not ask to evaluate a statement. Instead, the questions should quiz the user about the scenario presented in the question text.
@@ -13,4 +13,4 @@ Perform the following steps on question files $ARGUMENTS in the current folder:
 - Check that all answers marked correct are indeed correct. 
 - Check that the questions refer to MDFT Pro and describe an educational scenario.
 
-Fix any issues with questions with one or more of the above issues. 
+

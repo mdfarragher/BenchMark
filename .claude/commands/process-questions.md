@@ -1,6 +1,7 @@
 Perform the following steps on question files $ARGUMENTS in the current folder:
 
-- Rewrite and expand the question text so that it describes a complete scenario. Use roughly 2 paragraphs of text for this. Make sure the scenario refers to MDFT Pro and an educational context.
+- Format any tabular information in the question text as a markdown tables.
+- Lightly rewrite and expand the question text so that it describes a complete scenario. Use roughly 1 paragraph of text for this. Make sure the scenario refers to MDFT Pro and an educational context.
 - Make sure the question text ends with a question (preceded by a blank line), and that the texts of the answers are actually answers to the stated question.
 - Avoid questions that ask to evaluate a statement. Instead, quiz the user about the scenario presented in the question text.
 - Remove filler sentences like "Select all answers that apply", "Each correct answer presents a complete solution" and "For each of the following statements, select Yes if the statement is true. Otherwise, select No".

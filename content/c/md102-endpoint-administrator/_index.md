@@ -1,5 +1,5 @@
 ---
-title: "MD-102 Microsoft 365 Endpoint Administrator"
+title: "MD-102 MS365 Endpoint Administrator"
 description: "Efficient deployment and management of endpoints on various operating systems, platforms, and devices"
 type: "c"
 layout: "single"

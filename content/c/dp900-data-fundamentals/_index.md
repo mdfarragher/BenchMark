@@ -1,5 +1,5 @@
 ---
-title: "DP-900 Azure Data Fundamentals"
+title: "DP-900 Data Fundamentals"
 description: "Foundational knowledge of Azure data solutions"
 type: "c"
 layout: "single"

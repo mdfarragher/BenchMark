@@ -1,8 +1,11 @@
+---
 title: "AZ-104 Azure Administrator"
 description: "Administer and manage Azure cloud"
 type: "c"
 layout: "single"
-image: az900.jpg
+image: az104.jpg
+category: "associate"
+---
 
 The AZ-104: Microsoft Azure Administrator certification is intended for professionals who manage cloud services that span storage, security, networking, and compute within the Microsoft Azure platform. This certification validates your ability to implement, manage, and monitor identity, governance, storage, compute, and virtual networks in a cloud environment.
 

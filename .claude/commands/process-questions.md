@@ -23,7 +23,7 @@ Make sure the scenario in the question text refers to my company, MDFT Pro. You 
 
 - State that the resources mentioned in the question are operated by "MDFT Pro", a well known training agency.
 - State that the student doing the quiz is working for MDFT Pro or has been hired by MDFT Pro.
-- Rename any user names in the scenario to "Mark" and "Claire", and make up any other names. Make sure "Mark" is the boss of MDFT Pro in all scenarios.
+- Rename any user names in the scenario to "Mark" and "Claire", and make up any other names.
 - Rename any group names in the scenario to TRAINERS, STUDENTS, and make up any other names.
 - Rename any resource names to typical training agency resources like "Students", "Trainers", "Customers", "Courses" etc. 
 - Rename any app names to applications that are typically used in an educational context.

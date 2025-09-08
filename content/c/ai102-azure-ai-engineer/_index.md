@@ -5,7 +5,7 @@ type: "c"
 layout: "single"
 image: ai102.jpg
 category: "associate"
-
+---
 
 The AI-102 Designing and Implementing an Azure AI Solution certification is intended for professionals who build, manage, and deploy AI solutions using Microsoft Azure. This certification validates your ability to use Azure Cognitive Services, Azure Machine Learning, and knowledge mining to architect and implement AI solutions that solve business challenges.
 

@@ -35,4 +35,4 @@ link: "https://learn.microsoft.com/..."         # link to Microsoft Learn page w
 more: "Learn more about..."                     # usually "Learn more about [topic of the Microsoft learn page]"
 learn: "Azure Support Plans"                    # usually "[topic of the Microsoft learn page]"
 ---                                             # closing frontmatter tag
-You work for MDFT Academy, a well-known...      # the full text of the question, in Markdown format 
+You work for MDFT Pro, a well-known...      # the full text of the question, in Markdown format 

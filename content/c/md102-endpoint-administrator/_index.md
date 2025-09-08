@@ -4,6 +4,7 @@ description: "Efficient deployment and management of endpoints on various operat
 type: "c"
 layout: "single"
 image: ms900.jpg
+category: "associate"
 ---
 
 The MD-102 certification validates the skills required to deploy, configure, secure, manage, and monitor devices and client applications in a Microsoft 365 environment. This certification is intended for IT professionals who manage endpoints and support users in organizations using Microsoft 365 services. 

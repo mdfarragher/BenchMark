@@ -4,6 +4,7 @@ description: "Implementing analytics solutions using Microsoft Fabric"
 type: "c"
 layout: "single"
 image: dp600.jpg
+category: "associate"
 ---
 The Microsoft DP-600 certification validates your expertise in designing, building, and managing analytics solutions using Microsoft Fabric. This certification is intended for professionals who work with data analytics, including the creation and management of analytical assets such as semantic models, data warehouses, and lakehouses within the Microsoft Fabric ecosystem.
 

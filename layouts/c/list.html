@@ -5,12 +5,33 @@
         <p class="lead mt-3">{{ .Description }}</p>
     </div>
 
-    <div class="mt-4">
+    <div class="mt-4 mb-5">
         {{ .Content }}
     </div>
 
-    <div class="item-grid">
-    {{ range (.GetPage "/c").Pages }}
+    <h4>Microsoft Fundamentals Certifications</h4>
+    <div class="item-grid mb-5">
+    {{ range where (.GetPage "/c").Pages "Params.category" "fundamentals" }}
+        <a href="{{ .RelPermalink }}" class="item-tile">
+            <img src="{{ urls.RelURL (add "img/" .Params.image) }}" alt="category image">
+            <div>{{ .Title }}</div>
+        </a>
+    {{ end }}
+    </div>
+
+    <h4>Microsoft Associate Certifications</h4>
+    <div class="item-grid mb-5">
+    {{ range where (.GetPage "/c").Pages "Params.category" "associate" }}
+        <a href="{{ .RelPermalink }}" class="item-tile">
+            <img src="{{ urls.RelURL (add "img/" .Params.image) }}" alt="category image">
+            <div>{{ .Title }}</div>
+        </a>
+    {{ end }}
+    </div>
+
+    <h5>Microsoft Expert Certifications</h5>
+    <div class="item-grid mb-5">
+    {{ range where (.GetPage "/c").Pages "Params.category" "expert" }}
         <a href="{{ .RelPermalink }}" class="item-tile">
             <img src="{{ urls.RelURL (add "img/" .Params.image) }}" alt="category image">
             <div>{{ .Title }}</div>

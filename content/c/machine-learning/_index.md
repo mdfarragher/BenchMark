@@ -4,6 +4,7 @@ description: "Data preparation, supervised and unsupervised machine learning, an
 type: "c"
 layout: "single"
 image: ml-learn.jpg
+category: "mdft"
 
 courseName: "Supervised Machine Learning"
 courseLink: "https://www.mdft.academy/course-supervised-machine-learning-with-mlnet-and-csharp"

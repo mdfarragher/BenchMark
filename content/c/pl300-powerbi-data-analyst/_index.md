@@ -4,6 +4,7 @@ description: "Implementing analytics solutions using Microsoft Power BI"
 type: "c"
 layout: "single"
 image: pl300.jpg
+category: "associate"
 ---
 The PL-300: Microsoft Power BI Data Analyst certification demonstrates your expertise in transforming raw data into meaningful insights using Microsoft Power BI. This certification validates your ability to prepare, model, visualize, and analyze data, as well as deploy and maintain deliverables for your organization.
 

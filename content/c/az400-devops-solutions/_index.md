@@ -4,6 +4,7 @@ description: "Design and implement DevOps solutions using Microsoft Azure DevOps
 type: "c"
 layout: "single"
 image: az400.jpg
+category: "expert"
 ---
 The Microsoft AZ-400 certification validates your ability to combine people, processes, and technologies to continuously deliver valuable products and services that meet end user needs and business objectives.
 

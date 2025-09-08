@@ -3,7 +3,7 @@ title: "Exam Preparation Quiz"
 description: "Test your knowledge of Microsoft 365 endpoint administration"
 type: "q"
 layout: "single"
-image: ms900.jpg
+image: az104.jpg
 questions: 75
 passing: 70
 ---

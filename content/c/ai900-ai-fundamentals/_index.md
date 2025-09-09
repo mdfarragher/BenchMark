@@ -5,6 +5,9 @@ type: "c"
 layout: "single"
 image: ai900.jpg
 category: "fundamentals"
+
+moc: true
+courseLink: "https://www.mdft.academy/course-azure-ai-fundamentals"
 ---
 The AI-900 Azure AI Fundamentals certification is designed for individuals who are new to artificial intelligence and Microsoft Azure. This certification assesses essential knowledge of core AI concepts, machine learning, computer vision, natural language processing, and conversational AI on Azure. It is an excellent starting point for students and professionals who want to build a career in artificial intelligence and cloud technologies.
 

@@ -3,7 +3,7 @@ title: "Exam Preparation Quiz"
 description: "Test your knowledge of AI Fundamentals"
 type: "q"
 layout: "single"
-image: az400.jpg
+image: ai900.jpg
 questions: 75
 passing: 70
 ---

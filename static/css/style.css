@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6,
 
 /* Match text style with Podia */
 .navbar a {
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: 400 !important;
   letter-spacing: 0em;
   line-height: 1.65;
@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6,
 }
 h1 {
 font-family: "Inter";
-  font-size: 30px;
+  font-size: 2.5rem !important;
   font-weight: 400 !important;
   letter-spacing: 0em;
   line-height: 1.25;
@@ -46,13 +46,35 @@ font-family: "Inter";
   overflow-wrap: anywhere;
   word-break: normal;
 }
-p {
+p, li, a, label, div {
 font-family: "Inter";
-  font-size: 18px;    
+  font-size: 1.2rem;    
   font-weight: 400 !important;
   letter-spacing: 0em;
   line-height: 1.75;
   text-transform: none;
+}
+
+/* Source code */
+pre {
+    padding: 12px;
+}
+pre.chroma,
+pre.highlight,
+pre code {
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+code:not(pre code) {
+    font-size: 1.2rem;
+}
+
+/* Breadcrumb */
+.breadcrumb-item {
+    font-size: 1rem; 
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #FA6915
 }
 
 /* Special orange-underlined link */
@@ -105,6 +127,11 @@ font-family: "Inter";
     color: inherit;
 }
 
+/* Extra medium border color class */
+.border-gray { 
+  border-color: #ccc !important; 
+}
+
 .start-btn {
     width: 100%;
     margin-top: 20px;
@@ -112,6 +139,7 @@ font-family: "Inter";
 
 /* Initial style for quiz buttons */
 .quiz-option {
+    font-size: 1.2rem;
     width: 100%;
     margin-top: 5px;
     border: 1px solid black;
@@ -244,9 +272,4 @@ table tbody + tbody {
 
 .table-hover tbody tr:hover {
     background-color: rgba(0, 0, 0, 0.075);
-}
-
-/* code previews */
-pre {
-    padding: 8px;
 }

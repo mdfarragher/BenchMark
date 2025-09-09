@@ -11,10 +11,10 @@
     </div>
 
     {{ if .Params.courseLink }}
-    <div class="alert bg-white border border-dark">
+    <div class="alert bg-white border border-gray">
         <div class="d-flex align-items-center justify-content-between">
         {{ if .Params.moc }}
-            <p class="mb-0">I have <a class="warning-link" href="{{ .Params.courseLink }}">classroom video lectures</a> for this certification.</p>
+            <p class="mb-0">I have <a class="warning-link" href="{{ .Params.courseLink }}">Classroom Video Lectures</a> for this certification.</p>
             <a class="btn btn-primary border btn-sm ml-3" href="{{ .Params.courseLink }}">View Lectures</a>
         {{ else }}
             <p class="mb-0">These quizzes are part of the <a class="warning-link" href="{{ .Params.courseLink }}">{{ .Params.courseName }}</a> training course.</p>

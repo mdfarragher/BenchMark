@@ -5,6 +5,9 @@ type: "c"
 layout: "single"
 image: az900.jpg
 category: "fundamentals"
+
+moc: true
+courseLink: "https://www.mdft.academy/course-azure-cloud-fundamentals"
 ---
 The Azure Fundamentals (AZ-900) certification is designed for individuals who are new to cloud computing and Microsoft Azure. It provides essential knowledge of core Azure concepts, services, and management tools. This certification is an excellent starting point for students and professionals who want to build a career in cloud technologies.
 

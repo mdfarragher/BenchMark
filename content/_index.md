@@ -1,12 +1,14 @@
 ---
-title: "BenchMark Quizzes"
+title: "BenchMark Certification Prep Exams"
 description: "Get ready to ace your next Microsoft certification"
 type: "c"
 layout: "list"
 ---
 
-Hi, I'm Mark Farragher, the creator of BenchMark and the author of all the quizzes you'll find here.
+Are you preparing for a Microsoft certification? Your best strategy to pass the exam is to collect many practice questions, and rehearse them over and over until you know the subject matter by heart.
 
-I built BenchMark as a collection of interactive practice quizzes to help you get ready for your next Microsoft certification exam. Each quiz is designed to reflect the style and content of real Microsoft certification questions, so that you can assess your knowledge and focus your study efforts where it matters most.
+That's why I created my own exam prep platform called **BenchMark**. There, you will find a large collection of practice exams that will prepare you for the real Microsoft certification exams. Each practice exam has 75 questions and you need to get at least 70% correct to pass, just like on the real certification exams. 
 
-I hope you'll find these quizzes fun and effective. And good luck trying to beat the passing score!
+I built BenchMark as a place to share the practice exams I create for my classroom students. My goal is to get you ready for your certification exam and ensure you cannot fail.
+
+Right now, all exams on this site are free to access, but I will eventually put them behind a paywall. As an [All-Access Member](https://www.mdft.academy/all-access-membership), you'll retain full access to every quiz. 

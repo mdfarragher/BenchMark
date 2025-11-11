@@ -1,5 +1,5 @@
 ---
-title: "BenchMark Certification Prep Exams"
+title: "BenchMark Practice Exams"
 description: "Get ready to ace your next Microsoft certification"
 type: "c"
 layout: "list"

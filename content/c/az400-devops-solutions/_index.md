@@ -1,5 +1,5 @@
 ---
-title: "AZ-400 Azure DevOps Solutions"
+title: "Azure DevOps Solutions"
 description: "Design and implement DevOps solutions using Microsoft Azure DevOps"
 type: "c"
 layout: "single"

@@ -1,5 +1,5 @@
 ---
-title: "DP-600 Fabric Data Analyst"
+title: "Fabric Data Analyst"
 description: "Implementing analytics solutions using Microsoft Fabric"
 type: "c"
 layout: "single"

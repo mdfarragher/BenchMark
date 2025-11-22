@@ -1,5 +1,5 @@
 ---
-title: "AI-102 Azure AI Engineer"
+title: "Azure AI Engineer"
 description: "Design and implement AI solutions on Azure"
 type: "c"
 layout: "single"

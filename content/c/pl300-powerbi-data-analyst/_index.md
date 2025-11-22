@@ -1,5 +1,5 @@
 ---
-title: "PL-300 Power BI Data Analyst"
+title: "Power BI Data Analyst"
 description: "Implementing analytics solutions using Microsoft Power BI"
 type: "c"
 layout: "single"

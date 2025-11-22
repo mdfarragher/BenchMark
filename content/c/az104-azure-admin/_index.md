@@ -1,5 +1,5 @@
 ---
-title: "AZ-104 Azure Administrator"
+title: "Azure Administrator"
 description: "Administer and manage Azure cloud"
 type: "c"
 layout: "single"

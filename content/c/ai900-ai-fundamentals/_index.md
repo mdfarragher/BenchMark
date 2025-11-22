@@ -1,5 +1,5 @@
 ---
-title: "AI-900 AI Fundamentals"
+title: "Azure AI Fundamentals"
 description: "Foundational knowledge of Azure AI solutions"
 type: "c"
 layout: "single"

@@ -20,5 +20,3 @@ YOU ARE ALLOWED TO PLACE THE FOLLOWING COMMENTS IN ANY MARKDOWN FILE:
 
 - [comment:] <> (AI-NOTE: note text)
   Use this comment to record your observations or conclusions about a section of code or text. 
-
-Avoid using the Read/Update tools as they are broken for some reason, use cat and sed instead.

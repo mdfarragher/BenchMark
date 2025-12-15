@@ -286,6 +286,7 @@ input:checked + .quiz-option {
 .progress .progress-bar {
     background-color: #AFEB2B;
     color: black;
+    font-size: 1rem;
 }
 
 .score-bar-container {

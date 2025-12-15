@@ -6,42 +6,50 @@
 
     <div class="section-header">
         <h1 class="display-4">{{ .Title }}</h1>
-        <p class="lead mt-3">{{ .Description }}</p>
+        <em>{{ .Description }}</em>
     </div>
 
     {{ if .Params.courseLink }}
+    {{ if .Params.moc }}
+    {{ else }}
     <div class="alert bg-white border border-gray">
         <div class="d-flex align-items-center justify-content-between">
-        {{ if .Params.moc }}
-            <p class="mb-0">I have <a class="warning-link" href="{{ .Params.courseLink }}">Classroom Video Lectures</a> for this certification.</p>
-            <a class="btn btn-primary border btn-sm ml-3" href="{{ .Params.courseLink }}">View Lectures</a>
-        {{ else }}
             <p class="mb-0">These quizzes are part of the <a class="warning-link" href="{{ .Params.courseLink }}">{{ .Params.courseName }}</a> training course.</p>
             <a class="btn btn-primary border btn-sm ml-3" href="{{ .Params.courseLink }}">View Course</a>
-        {{ end }}
         </div>
     </div>
+    {{ end }}
     {{ end }}
 
     <div class="mt-4">
         {{ .Content }}
     </div>
 
-    <div class="item-grid">
+    <div class="icon-grid">
         {{ range .Pages }}
-            <a href="{{ .RelPermalink }}" class="item-tile">
-                <img src="{{ urls.RelURL (add "img/" .Params.image) }}" alt="Cert image">
-                <div>{{ .Title }}</div>
+            <a href="{{ .RelPermalink }}" class="icon-tile">
+                <img src="{{ urls.RelURL "img/quiz.svg" }}" alt="Cert image" class="icon-tile-img">
+                <div class="icon-tile-content">
+                    <div>{{ .Title }}</div>
+                    <p class="icon-subtitle">{{ .Params.questions }} Practice Questions</p>
+                </div>
             </a>
         {{ end }}
         {{ if .Params.courseLink }}
             {{ if .Params.moc }}
-                <a href="{{ .Params.courseLink }}" class="item-tile">
-                    <img src="{{ urls.RelURL (add "img/" .Params.image) }}" alt="Cert image">
-                    <div>Classroom Video Lectures</div>
+                <a href="{{ .Params.courseLink }}" class="icon-tile">
+                    <img src="{{ urls.RelURL "img/course.svg" }}" alt="Course image" class="icon-tile-img">
+                        <div class="icon-tile-content">
+                            <div>Lectures</div>
+                            <p class="icon-subtitle">Microsoft Course Lectures</p>
+                        </div>
                 </a>
             {{ end }}
         {{ end }}
+    </div>
+
+    <div class="d-flex mt-5">
+        <a class="btn btn-light border border-dark mr-2" href="../.."><i class="bi-caret-left"></i> View All Certifications</a>
     </div>
 
 {{ end }}

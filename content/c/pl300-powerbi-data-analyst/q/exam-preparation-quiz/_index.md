@@ -1,5 +1,5 @@
 ---
-title: "Exam Preparation Quiz"
+title: "Practice Exam"
 description: "Test your knowledge of Power BI Data Analysis"
 type: "q"
 layout: "single"

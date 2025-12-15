@@ -1,5 +1,5 @@
 ---
-title: "Exam Preparation Quiz"
+title: "Practice Exam"
 description: "Test your knowledge of Azure AI engineering fundamentals"
 type: "q"
 layout: "single"

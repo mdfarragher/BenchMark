@@ -1,5 +1,5 @@
 ---
-title: "Exam Preparation Quiz"
+title: "Practice Exam"
 description: "Test your knowledge of Microsoft 365 endpoint administration"
 type: "q"
 layout: "single"

@@ -1,0 +1,46 @@
+<div class="mt-5 pt-4 border-top">
+    <h5 class="mb-3">Discuss this question on social media:</h5>
+    <div class="d-flex flex-wrap">
+        <a href="https://www.reddit.com/submit?url={{ .Permalink }}&title={{ .Title | urlquery }}"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn-light border border-dark mr-2"
+           title="Share on Reddit">
+            <i class="bi-reddit mr-1"></i> Reddit
+        </a>
+        <a href="https://news.ycombinator.com/submitlink?u={{ .Permalink }}&t={{ .Title | urlquery }}"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn-light border border-dark mr-2"
+           title="Share on Hacker News">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="mr-1" fill="currentColor" viewBox="100 100 500 500">
+                <path d="M96 96L96 544L544 544L544 96L96 96zM117.2 293.2L117 293.2C117.1 293.1 117.2 292.9 117.3 292.8C117.3 292.9 117.3 293.1 117.2 293.2zM335.2 347.1L335.2 448L303.8 448L303.8 345.3L224 192L261.3 192C313.8 290.3 310.5 293.2 320.6 317.6C332.9 290.6 326.4 293.2 381.2 192L416 192L335.2 347.1z"/>
+            </svg>
+            Hacker News
+        </a>
+        <a href="https://mastodon.social/share?text={{ .Title | urlquery }}%20{{ .Permalink }}"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn-light border border-dark mr-2"
+           title="Share on Mastodon">
+            <i class="bi-mastodon mr-1"></i> Mastodon
+        </a>
+        <a href="https://bsky.app/intent/compose?text={{ .Title | urlquery }}%20{{ .Permalink }}"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn-light border border-dark mr-2"
+           title="Share on Bluesky">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="mr-1" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948"/>
+            </svg>
+            Bluesky
+        </a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn-light border border-dark mr-2"
+           title="Share on LinkedIn">
+            <i class="bi-linkedin mr-1"></i> LinkedIn
+        </a>
+    </div>
+</div>

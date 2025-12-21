@@ -3,7 +3,7 @@ title: "Azure Developer"
 description: "Develop cloud solutions on Azure"
 type: "c"
 layout: "single"
-image: az104.jpg
+image: az204.jpg
 category: "associate"
 ---
 

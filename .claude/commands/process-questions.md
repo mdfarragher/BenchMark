@@ -22,7 +22,7 @@ Perform the following steps on question files $ARGUMENTS in the current folder:
 Make sure the scenario in the question text refers to my company, MDFT Pro. You can do this by making the following changes: 
 
 - State that the resources mentioned in the question are operated by "MDFT Pro", a well known training agency.
-- State that the student doing the quiz is working for MDFT Pro or has been hired by MDFT Pro.
+- State that the student doing the quiz is working for Mark at MDFT Pro or has been hired by MDFT Pro to work for Mark.
 - Rename any user names in the scenario to "Mark" and "Claire", and make up any other names.
 - Give "Mark" a completely random business role in each question.
 - Rename any group names in the scenario to TRAINERS, STUDENTS, and make up any other names.

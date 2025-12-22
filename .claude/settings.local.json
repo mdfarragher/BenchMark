@@ -8,7 +8,10 @@
       "Bash(done)",
       "Bash(for i in {16..30})",
       "Bash(do echo \"=== Question $i - Last line check ===\")",
-      "Bash(tail:*)"
+      "Bash(tail:*)",
+      "WebSearch",
+      "Skill(split-questions)",
+      "Bash(ls:*)"
     ],
     "deny": [],
     "ask": []
